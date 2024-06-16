@@ -1,0 +1,66 @@
+[gd_scene load_steps=4 format=3 uid="uid://m4gm3nb1xuev"]
+
+[ext_resource type="Script" path="res://Scripts/DragAndDrop.gd" id="1_1obfq"]
+[ext_resource type="PackedScene" uid="uid://dvvvrorb62ll2" path="res://Scenes/SlotUI.tscn" id="1_520md"]
+[ext_resource type="Script" path="res://Scenes/TextureItemSpawner.gd" id="2_ufhec"]
+
+[node name="Inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1obfq")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.283
+anchor_top = 0.114
+anchor_right = 0.717
+anchor_bottom = 0.886
+offset_left = -0.0160217
+offset_top = 0.127998
+offset_right = 0.0159912
+offset_bottom = -0.128052
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 3
+
+[node name="Panel" parent="GridContainer" instance=ExtResource("1_520md")]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Panel2" parent="GridContainer" instance=ExtResource("1_520md")]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="Panel3" parent="GridContainer" instance=ExtResource("1_520md")]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="Panel4" parent="GridContainer" instance=ExtResource("1_520md")]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="Panel5" parent="GridContainer" instance=ExtResource("1_520md")]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="Panel6" parent="GridContainer" instance=ExtResource("1_520md")]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="TextureSpawner" type="Control" parent="."]
+anchors_preset = 0
+script = ExtResource("2_ufhec")

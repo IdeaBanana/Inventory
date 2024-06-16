@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="AbstractItem" load_steps=4 format=3 uid="uid://m81jwp78oapo"]
+
+[ext_resource type="Script" path="res://Resousrce/AbstractItem.gd" id="1_r0uwc"]
+[ext_resource type="Texture2D" uid="uid://cju3gj2obx3wq" path="res://AtlasIcon.png" id="2_hhpse"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5ecs"]
+atlas = ExtResource("2_hhpse")
+region = Rect2(208, 160, 16, 16)
+
+[resource]
+script = ExtResource("1_r0uwc")
+name = "Chicken"
+powerful = true
+rarely = true
+texture = SubResource("AtlasTexture_m5ecs")

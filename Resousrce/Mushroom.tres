@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="AbstractItem" load_steps=4 format=3 uid="uid://gi8mk61yaky5"]
+
+[ext_resource type="Script" path="res://Resousrce/AbstractItem.gd" id="1_s23op"]
+[ext_resource type="Texture2D" uid="uid://cju3gj2obx3wq" path="res://AtlasIcon.png" id="2_nbvyl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ucmi"]
+atlas = ExtResource("2_nbvyl")
+region = Rect2(0, 80, 16, 16)
+
+[resource]
+script = ExtResource("1_s23op")
+name = "Mushroom"
+powerful = true
+rarely = false
+texture = SubResource("AtlasTexture_5ucmi")
