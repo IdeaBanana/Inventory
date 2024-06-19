@@ -7,7 +7,6 @@ class_name AbstractItem
 @export var rarely: bool
 @export var texture: Texture2D
 
-
 func get_item_name() -> String:
 	return name
 
@@ -18,6 +17,8 @@ func get_rarely() -> bool:
 	return rarely
 
 func get_texture() -> Texture2D:
+	if !texture:
+		return null
 	if texture is AtlasTexture:
 		var image := Image.new()
 		image = texture.get_image()

@@ -1,10 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://b4rtn0aoguq2o"]
+[gd_scene load_steps=5 format=3 uid="uid://b4rtn0aoguq2o"]
 
 [ext_resource type="Texture2D" uid="uid://cju3gj2obx3wq" path="res://AtlasIcon.png" id="1_cg6f8"]
 [ext_resource type="Script" path="res://Scripts/DragAndDrop.gd" id="1_s5jmm"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fu825"]
-region = Rect2(112, 96, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s7h6e"]
 atlas = ExtResource("1_cg6f8")
@@ -18,8 +15,7 @@ custom_minimum_size = Vector2(37, 37)
 offset_top = 1.0
 offset_right = 37.78
 offset_bottom = 38.98
-mouse_filter = 0
-texture = SubResource("AtlasTexture_fu825")
+mouse_filter = 2
 script = ExtResource("1_s5jmm")
 
 [node name="Panel" type="Panel" parent="."]

@@ -12,6 +12,7 @@ config_version=5
 
 config/name="Inventory"
 run/main_scene="res://Scenes/Inventory.tscn"
+config/project_settings_override="вывфывф"
 config/features=PackedStringArray("4.2", "Forward Plus")
 
 [display]
