@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://l23h64fvar5o"]
+
+[ext_resource type="Script" path="res://Scripts/ItemSlot.gd" id="1_yidct"]
+[ext_resource type="Texture2D" uid="uid://cju3gj2obx3wq" path="res://AtlasIcon.png" id="2_f5py1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uneh1"]
+atlas = ExtResource("2_f5py1")
+region = Rect2(224, 160, 16, 16)
+
+[node name="TextureRect" type="TextureRect"]
+offset_right = 16.0
+offset_bottom = 16.0
+script = ExtResource("1_yidct")
+
+[node name="TexturePanel" type="TextureRect" parent="."]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_uneh1")
