@@ -2,6 +2,8 @@ extends Resource
 
 class_name Item
 
+# Абстрактный класс айтемов
+
 enum Type {WEAPON, POTION, EAT, ARMOR, MAGE}
 
 @export var type: Type
