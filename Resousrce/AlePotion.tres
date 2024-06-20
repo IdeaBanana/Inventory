@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://da66yuscqrt2v"]
+
+[ext_resource type="Script" path="res://Scripts/Item.gd" id="1_ldafh"]
+[ext_resource type="Texture2D" uid="uid://cju3gj2obx3wq" path="res://AtlasIcon.png" id="2_tfirw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oy7k7"]
+atlas = ExtResource("2_tfirw")
+region = Rect2(32, 208, 16, 16)
+
+[resource]
+script = ExtResource("1_ldafh")
+type = 1
+item_name = "Ale Potion"
+powerful = true
+rarely = false
+texture = SubResource("AtlasTexture_oy7k7")

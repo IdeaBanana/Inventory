@@ -1,11 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://fuqyq1tx0vsl"]
+[gd_scene load_steps=3 format=3 uid="uid://fuqyq1tx0vsl"]
 
-[ext_resource type="PackedScene" uid="uid://b4rtn0aoguq2o" path="res://Scenes/SlotUI.tscn" id="1_gat63"]
-[ext_resource type="Script" path="res://Scripts/InventoryItemMovement.gd" id="1_tawmg"]
-[ext_resource type="Script" path="res://Scripts/TextureItemsSetter.gd" id="2_504fx"]
-[ext_resource type="Resource" uid="uid://m81jwp78oapo" path="res://Resousrce/Chicken.tres" id="4_kytxr"]
-[ext_resource type="Resource" uid="uid://gi8mk61yaky5" path="res://Resousrce/Mushroom.tres" id="5_hnlrm"]
-[ext_resource type="Resource" uid="uid://ccvwdj4geq5pt" path="res://Resousrce/Shovel.tres" id="6_cw0ot"]
+[ext_resource type="Script" path="res://Scripts/Inventory.gd" id="1_4xwev"]
+[ext_resource type="PackedScene" uid="uid://gwb7egx2oyyn" path="res://Scripts/ItemSlot.tscn" id="1_t38c0"]
 
 [node name="Inventory" type="Control"]
 layout_mode = 3
@@ -14,59 +10,189 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_tawmg")
-inventory_array = Array[Resource("res://Resousrce/AbstractItem.gd")]([null, null, null, ExtResource("4_kytxr"), ExtResource("5_hnlrm"), ExtResource("6_cw0ot")])
+script = ExtResource("1_4xwev")
 
-[node name="BoxContainer" type="BoxContainer" parent="."]
-custom_minimum_size = Vector2(300, 300)
+[node name="InventoryContainer" type="GridContainer" parent="."]
+custom_minimum_size = Vector2(500, 500)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -150.0
-offset_top = -150.0
+offset_left = -250.0
+offset_top = -250.0
+offset_right = 250.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 5
+
+[node name="Slot" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot2" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot3" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot4" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot5" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot6" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot7" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot8" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot9" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot10" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot11" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot12" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot13" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot14" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot15" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot16" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot17" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot18" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot19" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot20" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot21" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot22" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot23" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot24" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slot25" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
 offset_right = 150.0
-offset_bottom = 150.0
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="GridContainer" type="GridContainer" parent="BoxContainer"]
+[node name="VisualItem" type="TextureRect" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
-size_flags_horizontal = 3
-columns = 3
-script = ExtResource("2_504fx")
-size_item = Vector2(37, 37)
+size_flags_vertical = 0
 
-[node name="Slot" parent="BoxContainer/GridContainer" instance=ExtResource("1_gat63")]
+[node name="ItemLabel" type="Label" parent="Panel/VBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 6
-mouse_filter = 0
-taked_modulate = Color(0.834615, 0.834614, 0.834614, 1)
+text = "Item:
+"
+vertical_alignment = 1
 
-[node name="Slot2" parent="BoxContainer/GridContainer" instance=ExtResource("1_gat63")]
+[node name="TypeLabel" type="Label" parent="Panel/VBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 6
+text = "Type:
+"
+vertical_alignment = 1
 
-[node name="Slot3" parent="BoxContainer/GridContainer" instance=ExtResource("1_gat63")]
+[node name="PowerfulLabel" type="Label" parent="Panel/VBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 6
+text = "Powerful:
+"
+vertical_alignment = 1
 
-[node name="Slot4" parent="BoxContainer/GridContainer" instance=ExtResource("1_gat63")]
+[node name="RarelyLabel" type="Label" parent="Panel/VBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 6
-
-[node name="Slot5" parent="BoxContainer/GridContainer" instance=ExtResource("1_gat63")]
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 6
-
-[node name="Slot6" parent="BoxContainer/GridContainer" instance=ExtResource("1_gat63")]
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 6
+text = "Rarely:
+"
+vertical_alignment = 1

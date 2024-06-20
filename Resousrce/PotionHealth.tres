@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://23u5wsk2gp8o"]
+
+[ext_resource type="Script" path="res://Scripts/Item.gd" id="1_5ngoe"]
+[ext_resource type="Texture2D" uid="uid://cju3gj2obx3wq" path="res://AtlasIcon.png" id="2_xwrvp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40ecl"]
+atlas = ExtResource("2_xwrvp")
+region = Rect2(0, 208, 16, 16)
+
+[resource]
+script = ExtResource("1_5ngoe")
+type = 1
+item_name = " potion health"
+powerful = true
+rarely = false
+texture = SubResource("AtlasTexture_40ecl")

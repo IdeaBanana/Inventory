@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://bn5m5cgsk14du"]
+
+[ext_resource type="Script" path="res://Scripts/Item.gd" id="1_r1ml5"]
+[ext_resource type="Texture2D" uid="uid://cju3gj2obx3wq" path="res://AtlasIcon.png" id="2_c4wwh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40ecl"]
+atlas = ExtResource("2_c4wwh")
+region = Rect2(16, 208, 16, 16)
+
+[resource]
+script = ExtResource("1_r1ml5")
+type = 1
+item_name = " honey potion "
+powerful = true
+rarely = false
+texture = SubResource("AtlasTexture_40ecl")

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://b2iv4uvu5dojw"]
+
+[ext_resource type="Script" path="res://Scripts/Item.gd" id="1_yw6vu"]
+[ext_resource type="Texture2D" uid="uid://cju3gj2obx3wq" path="res://AtlasIcon.png" id="2_h27jt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tnkju"]
+atlas = ExtResource("2_h27jt")
+region = Rect2(16, 96, 16, 16)
+
+[resource]
+script = ExtResource("1_yw6vu")
+type = 4
+item_name = "Mage ring"
+powerful = true
+rarely = true
+texture = SubResource("AtlasTexture_tnkju")

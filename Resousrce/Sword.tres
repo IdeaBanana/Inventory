@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://d1nl5pjv8ejob"]
+
+[ext_resource type="Script" path="res://Scripts/Item.gd" id="1_4seny"]
+[ext_resource type="Texture2D" uid="uid://cju3gj2obx3wq" path="res://AtlasIcon.png" id="2_22jrs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oy7k7"]
+atlas = ExtResource("2_22jrs")
+region = Rect2(16, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_4seny")
+type = 0
+item_name = "Sword"
+powerful = false
+rarely = false
+texture = SubResource("AtlasTexture_oy7k7")

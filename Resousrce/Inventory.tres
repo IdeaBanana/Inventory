@@ -1,10 +1,14 @@
-[gd_resource type="Resource" script_class="InventoryItems" load_steps=5 format=3 uid="uid://5be7n0g4exhb"]
+[gd_resource type="Resource" script_class="InventoryItems" load_steps=9 format=3 uid="uid://dvoi1vjfg2ds8"]
 
-[ext_resource type="Resource" uid="uid://m81jwp78oapo" path="res://Resousrce/Chicken.tres" id="1_s8gq1"]
-[ext_resource type="Resource" uid="uid://gi8mk61yaky5" path="res://Resousrce/Mushroom.tres" id="2_deyaj"]
-[ext_resource type="Resource" uid="uid://ccvwdj4geq5pt" path="res://Resousrce/Shovel.tres" id="3_456bj"]
-[ext_resource type="Script" path="res://Resousrce/Inventory.gd" id="4_v7qy3"]
+[ext_resource type="Resource" uid="uid://da66yuscqrt2v" path="res://Resousrce/AlePotion.tres" id="1_bptbk"]
+[ext_resource type="Resource" uid="uid://bn5m5cgsk14du" path="res://Resousrce/HoneyPotion.tres" id="2_4qtgj"]
+[ext_resource type="Resource" uid="uid://23u5wsk2gp8o" path="res://Resousrce/PotionHealth.tres" id="3_045xs"]
+[ext_resource type="Resource" uid="uid://87pv6fbnvwpd" path="res://Resousrce/Chicken.tres" id="4_qw85i"]
+[ext_resource type="Resource" uid="uid://b2iv4uvu5dojw" path="res://Resousrce/MageRing.tres" id="5_n8kdw"]
+[ext_resource type="Resource" uid="uid://cebshpr8cr2e6" path="res://Resousrce/Costume.tres" id="6_otip5"]
+[ext_resource type="Resource" uid="uid://d1nl5pjv8ejob" path="res://Resousrce/Sword.tres" id="7_r6xjb"]
+[ext_resource type="Script" path="res://Resousrce/InventoryItems.gd" id="8_8lw6v"]
 
 [resource]
-script = ExtResource("4_v7qy3")
-inventory_items = Array[Resource("res://Resousrce/AbstractItem.gd")]([null, ExtResource("1_s8gq1"), null, ExtResource("2_deyaj"), ExtResource("3_456bj"), null])
+script = ExtResource("8_8lw6v")
+items = Array[Resource("res://Scripts/Item.gd")]([ExtResource("1_bptbk"), ExtResource("2_4qtgj"), ExtResource("3_045xs"), ExtResource("4_qw85i"), ExtResource("5_n8kdw"), ExtResource("6_otip5"), ExtResource("7_r6xjb"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
