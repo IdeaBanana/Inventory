@@ -4,13 +4,16 @@ class_name Item
 
 # Абстрактный класс айтемов
 
-enum Type {WEAPON, POTION, EAT, ARMOR, MAGE}
+enum Type {Weapon, Potion, Eat, Armor, Mage}
 
 @export var type: Type
 @export var item_name: String
 @export var powerful: bool
 @export var rarely: bool
 @export var texture: Texture2D
+
+func get_type() -> Type:
+	return type
 
 func get_item_name() -> String:
 	return item_name

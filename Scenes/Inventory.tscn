@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://fuqyq1tx0vsl"]
+[gd_scene load_steps=4 format=3 uid="uid://fuqyq1tx0vsl"]
 
 [ext_resource type="Script" path="res://Scripts/Inventory.gd" id="1_4xwev"]
 [ext_resource type="PackedScene" uid="uid://l23h64fvar5o" path="res://Scenes/ItemSlot.tscn" id="1_t38c0"]
+[ext_resource type="Script" path="res://Scripts/ItemDataViewport.gd" id="3_ovpw8"]
 
 [node name="Inventory" type="Control"]
 layout_mode = 3
@@ -32,6 +33,7 @@ columns = 5
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+preview_modulate = Color(0.758191, 0.758192, 0.758192, 1)
 
 [node name="Slot2" parent="InventoryContainer" instance=ExtResource("1_t38c0")]
 layout_mode = 2
@@ -157,7 +159,7 @@ size_flags_vertical = 3
 layout_mode = 1
 anchors_preset = 9
 anchor_bottom = 1.0
-offset_right = 150.0
+offset_right = 300.0
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
@@ -167,10 +169,19 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("3_ovpw8")
+prefix_item = "Item:"
+prefix_type = "Type:"
+prefix_rarely = "Rarely:"
+prefix_powerful = "Powerful:"
+label_unknown_item = " Select item"
+label_true_bool = " Its realy power sheet!"
+label_false_bool = " also not bad"
 
 [node name="VisualItem" type="TextureRect" parent="Panel/VBoxContainer"]
-custom_minimum_size = Vector2(0, 150)
+custom_minimum_size = Vector2(300, 300)
 layout_mode = 2
+size_flags_horizontal = 4
 size_flags_vertical = 0
 
 [node name="ItemLabel" type="Label" parent="Panel/VBoxContainer"]
