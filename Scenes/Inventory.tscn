@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://fuqyq1tx0vsl"]
+[gd_scene load_steps=5 format=3 uid="uid://fuqyq1tx0vsl"]
 
 [ext_resource type="Script" path="res://Scripts/Inventory.gd" id="1_4xwev"]
 [ext_resource type="PackedScene" uid="uid://l23h64fvar5o" path="res://Scenes/ItemSlot.tscn" id="1_t38c0"]
 [ext_resource type="Script" path="res://Scripts/ItemDataViewport.gd" id="3_ovpw8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_s3rj6"]
+font_size = 18
 
 [node name="Inventory" type="Control"]
 layout_mode = 3
@@ -170,11 +173,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("3_ovpw8")
-prefix_item = "Item:"
-prefix_type = "Type:"
-prefix_rarely = "Rarely:"
-prefix_powerful = "Powerful:"
-label_unknown_item = " Select item"
+prefix_item = "Item: "
+prefix_type = "Type: "
+prefix_rarely = "Rarely: "
+prefix_powerful = "Powerful: "
+label_unknown_item = "???"
 label_true_bool = " Its realy power sheet!"
 label_false_bool = " also not bad"
 
@@ -188,6 +191,7 @@ size_flags_vertical = 0
 layout_mode = 2
 text = "Item:
 "
+label_settings = SubResource("LabelSettings_s3rj6")
 vertical_alignment = 1
 
 [node name="TypeLabel" type="Label" parent="Panel/VBoxContainer"]

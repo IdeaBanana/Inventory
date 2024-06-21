@@ -45,7 +45,7 @@ func _drop_data(at_position, data):
 	var preview_rect = data[data_preview_rect]
 	preview_rect.queue_free()
 	var filtered_slot: Array = inventory_container.filter(func(child): return child.get_global_rect().has_point(get_global_mouse_position()))
-	if filtered_slot[0]:
+	if filtered_slot and filtered_slot[0]:
 		var slot = filtered_slot[0]
 		if slot in inventory_container:
 			if !slot.get_item():

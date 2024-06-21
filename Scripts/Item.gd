@@ -12,8 +12,9 @@ enum Type {Weapon, Potion, Eat, Armor, Mage}
 @export var rarely: bool
 @export var texture: Texture2D
 
-func get_type() -> Type:
-	return type
+func get_type() -> String:
+	var type_names = Type.keys()
+	return type_names[type]
 
 func get_item_name() -> String:
 	return item_name

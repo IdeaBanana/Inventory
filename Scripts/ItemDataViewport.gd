@@ -30,7 +30,7 @@ func update_item_data():
 	if item:
 		visual.texture = item.get_texture()
 		item_text.text = prefix_item + item.get_item_name()
-		type_text.text += str(item.get_type())
+		type_text.text = prefix_type + item.get_type()
 		if item.get_powerful():
 			powerful_text.text = prefix_powerful + label_true_bool
 		else:
